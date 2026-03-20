@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+
+.font-playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}

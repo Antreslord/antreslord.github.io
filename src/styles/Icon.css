@@ -1,0 +1,12 @@
+.icon-skill:hover .icon-info{
+    display: block;
+}
+
+.icon-info{
+    translate: -20rem -17rem;
+    width: 20rem;
+}
+
+/* .icon-skill{
+    width: 20rem;
+} */

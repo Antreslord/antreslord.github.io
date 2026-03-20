@@ -1,0 +1,42 @@
+.box-boomerang{
+    animation: boomerang 5s infinite ease-in-out;
+
+}
+
+.box-spin{
+    animation: spin 50s infinite ease-in-out;
+}
+
+.triangle{
+    clip-path: polygon(50% 0, 0 80%, 100% 80%);
+    /* border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #ff6b6b; */
+}
+
+@keyframes spin{
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes boomerang{
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      /* Mitad del viaje de ida - sube un poco */
+      transform: translate(-25rem, -5rem) rotate(180deg);
+    }
+    50% {
+      /* Punto más lejano - gira completamente */
+      transform: translate(-50rem, 5rem) rotate(360deg);
+    }
+    75% {
+      /* Mitad del viaje de vuelta - baja un poco */
+      transform: translate(-25rem, 12rem) rotate(540deg);
+    }
+    100% {
+      /* Regresa al origen */
+      transform: translate(0, 0) rotate(720deg);
+    }
+}
