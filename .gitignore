@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 *.png
 
+vite.config.ts
+package.json
