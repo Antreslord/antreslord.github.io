@@ -5,10 +5,10 @@ import "../styles/animations.css"
 function Main(){
 
     return(
-        <div className="relative">
+        <div className="md:w-full md:full relative w-full">
 
-            <div className="blur-2xl p-[10rem]">
-                <div className="box-spin absolute bg-[#457812] translate-x-[-15rem] w-[70rem] h-[70rem] triangle z-0 blur-2xl"></div>
+            <div className="md:blur-2xl md:p-[10rem] md:absolute md:block hidden">
+                <div className="md:z-0 md:blur-2xl md:bg-[#457812] md:translate-x-[-15rem] md:w-[70rem] md:h-[70rem] md:absolute triangle  box-spin"></div>
             </div>
 
             <AboutMe />

@@ -9,8 +9,8 @@ import type { Image } from "../interfaces/image";
 // importacion de iconos
 import { IconReact, IconTailwindCSS } from "../components/Icon";
 
-
-import { Link } from "react-router-dom";
+// importacion de componentes
+import ButtonReturn from "../components/ButtonReturn";
 
 const HelenaPage = () => {
   const image: Image = {
@@ -36,24 +36,21 @@ const HelenaPage = () => {
   };
 
   return (
-    <div className="px-[100px] py-[60px] relative">
-      <div className="fixed -translate-x-[70px]">
-        <Link className="text-5xl" to={"/"}>
-          &#x21A9;
-        </Link>
-      </div>
+    <div className="md:px-[100px] px-[50px] py-[60px] relative">
+      
+      <ButtonReturn />
 
-      <h2 className="text-5xl font-playfair-display mb-[50px]">
+      <h2 className="md:text-5xl text-3xl font-playfair-display mb-[50px]">
         Helena: De la Teoría a la Práctica
       </h2>
 
-      <h3 className="text-3xl font-playfair-display mb-[30px]">
+      <h3 className="md:text-3xl text-xl font-playfair-display mb-[30px]">
         Cómo un proyecto de grado sobre Alzheimer definió mi transición hacia el
         desarrollo de software con propósito
       </h3>
 
-      <div className="font-rubik text-xl mb-[100px] grid grid-cols-2 gap-[50px] items-center">
-        <div className="">
+      <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col font-rubik text-lg mb-[100px] items-center">
+        <div className="mb-[50px]">
           <p>
             Cuando inicié mi proyecto de grado, Helena, me enfrenté a algo muy
             diferente: la realidad del Síndrome de Alzheimer. El primer
@@ -79,7 +76,7 @@ const HelenaPage = () => {
         </div>
       </div>
 
-      <div className="font-rubik text-xl mb-[100px] grid grid-cols-2 gap-[50px] items-center">
+      <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col-reverse font-rubik text-lg mb-[100px] items-center">
         <div className="">
           <img
             className=""
@@ -89,7 +86,7 @@ const HelenaPage = () => {
             height={image2.height}
           />
         </div>
-        <div className="">
+        <div className="mb-[50px]">
           <p>
             Con esta nueva comprensión, el diseño dejó de ser estético para
             volverse funcional. Cada botón, cada color y cada flujo de
@@ -110,8 +107,8 @@ const HelenaPage = () => {
         </div>
       </div>
 
-      <div className="font-rubik text-xl mb-[60px] grid grid-cols-2 gap-[50px] items-center">
-        <div className="">
+      <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col font-rubik text-lg mb-[100px] items-center">
+        <div className="mb-[50px]">
           <p>
             Uno de los puntos de inflexión fue el desarrollo de las actividades
             cognitivas. Crear juegos como "encontrar parejas" o "buscar figuras

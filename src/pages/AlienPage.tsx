@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// importacion de imagenes
 import type { Image } from "../interfaces/image"
 
 // importacion de las imagenes
@@ -11,6 +11,9 @@ import img6 from "../assets/alien-attack/game-over.png"
 //importacion de iconos
 import { IconPython } from "../components/Icon"
 
+// importacion de componentes
+import ButtonReturn from "../components/ButtonReturn"
+
 const AlienPage = () => {
 
     const image:Image = {id: 4, url: img, width: 600, height: 300}
@@ -20,24 +23,22 @@ const AlienPage = () => {
     const image6:Image = {id: 9, url: img6, width: 600, height: 300}
 
     return (
-      <div className="px-[100px] py-[60px] relative">
-        <div className="fixed -translate-x-[70px]">
-          <Link className="text-5xl" to={"/"}>
-            &#x21A9;
-          </Link>
-        </div>
+      <div className="md:px-[100px] px-[50px] py-[60px] relative">
+        
 
-        <h2 className="text-5xl font-playfair-display mb-[50px]">
+        <ButtonReturn />
+
+        <h2 className="md:text-5xl text-3xl font-playfair-display mb-[50px]">
           De la Teoría a la Acción: Construyendo un Motor de Juego en Python
         </h2>
 
-        <h3 className="text-3xl font-playfair-display mb-[30px]">
+        <h3 className="md:text-3xl text-xl font-playfair-display mb-[30px]">
           El desarrollo de la Programación Orientada a Objetos (POO) en un
           entorno donde el tiempo real y la interacción son increíbles.
         </h3>
 
-        <div className="font-rubik text-xl mb-[100px] grid grid-cols-2 gap-[50px] items-center">
-          <div className="">
+        <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col font-rubik text-lg mb-[100px] items-center">
+          <div className="mb-[50px]">
             <p>
               Decidí crear un videojuego tipo shooter espacial (estilo "Alien
               Attack") utilizando Pygame. El objetivo no era solo hacer un juego
@@ -60,7 +61,7 @@ const AlienPage = () => {
           </div>
         </div>
 
-        <div className="font-rubik text-xl mb-[100px] grid grid-cols-2 gap-[50px] items-center">
+        <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col-reverse font-rubik text-lg mb-[100px] items-center">
           <div className="">
             <img
               className=""
@@ -70,7 +71,7 @@ const AlienPage = () => {
               height={image2.height}
             />
           </div>
-          <div className="">
+          <div className="mb-[50px]">
             <p>
               El mayor obstáculo técnico no fue dibujar los sprites, sino
               orquestar la interacción entre ellos. En un juego con decenas de
@@ -91,8 +92,8 @@ const AlienPage = () => {
           </div>
         </div>
 
-        <div className="font-rubik text-xl mb-[60px] grid grid-cols-2 gap-[50px] items-center">
-          <div className="">
+        <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col font-rubik text-lg mb-[100px] items-center">
+          <div className="mb-[50px]">
             <p>
               Una de las funciones como jugador fue la implementación de poder
               disparar hacia las 4 direcciones(Arriba, Abajo, Derecha e
@@ -118,10 +119,10 @@ const AlienPage = () => {
           </div>
         </div>
 
-        <div className="font-rubik text-xl mb-[100px] grid grid-cols-2 gap-[50px] items-center">
+        <div className="md:grid md:grid-cols-2 md:gap-[50px] md:text-xl flex flex-col-reverse font-rubik text-lg mb-[100px] items-center">
           <div className="">
             <img
-              className=""
+              className="mb-[40px]"
               src={image4.url}
               alt={image4.alt}
               width={image4.width}
@@ -135,7 +136,7 @@ const AlienPage = () => {
               height={image6.height}
             />
           </div>
-          <div className="">
+          <div className="mb-[50px]">
             <p>
               Este proyecto marcó un punto de inflexión en mi trayectoria
               técnica: De la teoria a la practica real, Pasé de entender la POO

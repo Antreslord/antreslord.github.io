@@ -3,15 +3,15 @@ import { IconGitHub, IconInstagram, IconWhatsApp } from "./Icon"
 
 const Footer = () => {
     return(
-        <footer className="flex flex-col items-center footer footer-center bg-base-200/60 rounded-sm p-[50px] mt-[150px]">
-            <div className="flex items-center mb-[50px]">
-                <nav className="grid grid-flow-col gap-4 text-base-content me-[200px]">
+        <footer className="md:bg-base-200/60 md:rounded-sm md:p-[50px] md:w-full flex flex-col md:items-center footer footer-center mt-[150px] w-full">
+            <div className="flex justify-around mb-[50px]">
+                <nav className="md:me-[200px] grid grid-flow-col gap-4 text-base-content">
                     <a href="#" className="link link-hover">About</a>
                     {/* <a href="#" className="link link-hover">Contact</a> */}
                     <a href="#" className="link link-hover">Jobs</a>
                     {/* <a href="#" className="link link-hover">Policy</a> */}
                 </nav>
-                <nav>
+                <nav className="flex">
                     <div className="flex gap-4">
                         <a href="https://github.com/Antreslord" target="_blank" className="link link-animated" aria-label="Github Link">
                             <IconGitHub />
@@ -26,7 +26,7 @@ const Footer = () => {
                 </nav>
             </div>
             <aside>
-                <p>Copyright © 2024 - All right reserved by FlyonUI</p>
+                <p className="w-full text-center">Copyright © 2024 - All right reserved by FlyonUI</p>
             </aside>
         </footer>
     )

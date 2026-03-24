@@ -4,8 +4,8 @@ import type { Image } from "../interfaces/image"
 const ViewProject:React.FC<Image>= ({ id, url, alt, title, description}) => {
 
     return(
-        <div className="flex flex-col content-between w-min p-[10px]">
-            <div className="mb-[20px] w-[400px] h-[250px] rounded-xl" id={"id-"+id}>
+        <div className="md:w-min flex flex-col md:content-between content-center w-[80%] p-[10px]">
+            <div className="md:mb-[20px] md:w-[400px] md:h-[250px] rounded-xl" id={"id-"+id}>
                 <img className="object-contain w-full h-full object-cover rounded-xl" src={url} alt={alt} />
             </div>
             <div className="flex flex-col mb-[20px]">

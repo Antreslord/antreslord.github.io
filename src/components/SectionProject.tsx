@@ -10,7 +10,7 @@ const SectionProject = () => {
         { id:2, url:ImgPygameAlien, title:"Alien Attack", alt:"alien-attack", description:"Alien Attack, videojuego desarrollado netamente con Pygame emulando el famoso juego homónimo."},
     ]
     return(
-        <div className="relative z-10 flex justify-evenly gap-5">
+        <div className="md:relative md:z-10 md:flex md:flex-row md:justify-evenly md:gap-5 md:pt-[10rem] justify-items-center">
             {
                 images.map((image) => (
                     <ViewProject
