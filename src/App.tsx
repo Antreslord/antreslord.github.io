@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='overflow-y-auto'>
       <Routes>
         <Route path='/' Component={HomePage}/>
         <Route path='/helena' Component={HelenaPage}/>
