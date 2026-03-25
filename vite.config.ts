@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: '/',  // ← Tu nombre de repositorio
+  base: '/antreslord.github.io',  // ← Tu nombre de repositorio
 })
