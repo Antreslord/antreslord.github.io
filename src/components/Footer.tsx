@@ -26,7 +26,7 @@ const Footer = () => {
                 </nav>
             </div>
             <aside>
-                <p className="w-full text-center">Copyright © 2024 - All right reserved by FlyonUI</p>
+                <p className="w-full text-center">Copyright © 2026 - All right reserved by Cristian Delgado</p>
             </aside>
         </footer>
     )
