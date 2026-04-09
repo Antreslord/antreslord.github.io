@@ -12,3 +12,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+::-webkit-scrollbar {
+  width: 7px;               /* Ancho de la barra vertical */
+  height: 10px;              /* Altura de la barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #343434;       /* Color del fondo (track) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd;          /* Color del deslizador (thumb) */
+  border-radius: 10px;       /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;          /* Color al pasar el mouse */
+}
